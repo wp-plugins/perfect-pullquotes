@@ -19,28 +19,31 @@ The default shortcode tag is shown here
 <pre>[pullquote align="left" color="" class=""]This is the pullquote text.[/pullquote]</pre>
 
 = Options =
-The shortcode includes three options, as outlined below.
+The shortcode includes three options, (align, color, and class) as outlined below:
 
-**align="left|right"**
-Determines whether pullquote is left or right aligned. **Required**
+**align="left|right"**<br/>
+Determines whether pullquote is left or right aligned.<br/>
+**Required**<br/>
 <code>[pullquote align="left"][/pullquote]</code>
-
-**color="#EEEEEE"**
-Change the default <code>border-color</code> attribute by entering a valid HEX color, including the pound ( # ) sign. **Optional**
+<hr/>
+**color="#EEEEEE"**<br/>
+Change the default <code>border-color</code> attribute by entering a valid HEX color, including the pound ( # ) sign.<br/>
+**Optional**<br/>
 <code>[pullquote align="left" color="#16989D"][/pullquote]</code>
-
-**class="className"**
-Add class(es) to pullquote container. **Optional**
+<hr/>
+**class="className"**<br/>
+Add class(es) to pullquote container.<br/>
+**Optional**<br/>
 <code>[pullquote align ="right" class="firstClass secondClass"][/pullquote]</code>
 
 == Installation ==
 
-Download the plugin from Wordpress or [GitHub](https://github.com/adamdehaven/perfect-pullquotes/archive/master.zip). To change the default color of the pullquote’s border, edit lines <code>51</code> and <code>59</code> of the <code>pullquote.css</code> file by changing the HEX value of the <code>border-color</code> attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode (details below). 
+Download the plugin from Wordpress or [GitHub](https://github.com/adamdehaven/perfect-pullquotes/archive/master.zip). To change the default color of the pullquote’s border before installing, edit lines <code>51</code> and <code>59</code> of the <code>pullquote.css</code> file by changing the HEX value of the <code>border-color</code> attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode. 
 
 1. Upload the compressed <code>perfect-pullquotes.zip</code> plugin file via your Wordpress Dashboard: <code>Plugins > Add New > Upload Plugin</code>, or to the `/wp-content/plugins/` directory within your Wordpress installation on your server.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
-Once installed, the plugin will add two Pullquote buttons to the Visual Editor (TinyMCE) within your Wordpress installation.
+Once installed, the plugin will add two Pullquote buttons to the Visual Editor (TinyMCE) within your Wordpress installation as well as enable the `[pullquote/]` shortcode.
 
 == Frequently Asked Questions ==
 
