@@ -7,6 +7,7 @@ Author: Adam Dehaven
 Version: 1.0.2
 Author URI: http://adamdehaven.com
 */
+
 add_action( 'wp_enqueue_scripts', 'adamdehaven_pullquote_styles' );
 function adamdehaven_pullquote_styles()
 {
