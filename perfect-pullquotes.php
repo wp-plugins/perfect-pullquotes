@@ -2,7 +2,7 @@
 /*
 Plugin Name: Perfect Pullquotes
 Plugin URI:  http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
-Description: Add beautifully styled left aligned, right aligned, or full width pullquotes to your Wordpress posts.
+Description: Add beautifully styled pullquotes to your Wordpress posts
 Version:     1.3
 Author:      Adam Dehaven
 Author URI:  http://adamdehaven.com/
@@ -90,5 +90,3 @@ function adamdehaven_register_buttons($buttons) {
 	array_push( $buttons, 'pullquote-menu' );
 	return $buttons;
 }
-
-?>
