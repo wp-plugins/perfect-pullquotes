@@ -4,25 +4,25 @@ Donate link: http://adamdehaven.com/
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 1.1.4
-License: GPLv2 or later
+Stable tag: 1.2
+License: GPL2
 License URI: https://github.com/adamdehaven/perfect-pullquotes/blob/master/LICENSE
 
-Add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes two custom buttons for the Visual Editor as well as a custom shortcode.
+Add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes a custom 'Pullquote' menu button for the TinyMCE Editor as well as a custom shortcode. View the always-current info post on [adamdehaven.com](http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-theme-with-the-perfect-pullquotes-plugin/)
 
 == Description ==
-Add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes two custom buttons for the Visual Editor as well as a custom shortcode.
+Add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes a custom 'Pullquote' menu button for the TinyMCE Editor as well as a custom shortcode. View the always-current info post on [adamdehaven.com](http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-theme-with-the-perfect-pullquotes-plugin/)
 
-The plugin enables a [Wordpress shortcode](https://codex.wordpress.org/Shortcode_API) that allows you to add a pullquote within your content. The shortcode can be added manually or by selecting text in the text editor and then clicking either of the Pullquote buttons (one for left-aligned, the other for right-aligned).
+The plugin enables a [Wordpress shortcode](https://codex.wordpress.org/Shortcode_API) that allows you to add a pullquote within your content. The shortcode can be added manually or by selecting text in the text editor and then selecting an option (left, right, or full) from the Pullquote dropdown button.
 
 The default shortcode tag is shown here
 <pre>[pullquote align="left" color="" class="" cite="" link=""]This is the pullquote text.[/pullquote]</pre>
 
 = Options =
-The shortcode includes three options, (align, color, and class) as outlined below:
+The shortcode includes five options, (align, color, and class) as outlined below:
 
 = align="left" =
-**REQUIRED**: Determines whether pullquote is left-aligned, right-aligned, or full-width (100% width of container). Accepts "left", "right", or "full"
+**REQUIRED**: Determines whether pullquote is left-aligned, right-aligned, or full-width (95% width of container). Accepts "left", "right", or "full"
 `[pullquote align="left"][/pullquote]`  
 
 = color="#EEEEEE" =
@@ -48,7 +48,7 @@ Download the plugin from Wordpress or [GitHub](https://github.com/adamdehaven/pe
 1. Upload the compressed `perfect-pullquotes.zip` plugin file via your Wordpress Dashboard: `Plugins > Add New > Upload Plugin`, or to the `/wp-content/plugins/` directory within your Wordpress installation on your server.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
-Once installed, the plugin will add two Pullquote buttons to the Visual Editor (TinyMCE) within your Wordpress installation as well as enable the `[pullquote/]` shortcode.
+Once installed, the plugin will add a Pullquote dropdown button to the Visual Editor (as seen below) within your Wordpress installation as well as enable the `[pullquote]` shortcode.
 
 == Frequently Asked Questions ==
 
@@ -70,10 +70,15 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 
 == Screenshots ==
 
-1. This screenshot shows the two buttons that will be added to the Visual Editor once installed. The two buttons can be used to insert a left-aligned or right-aligned pullquote, accordingly. The actual positioning of the buttons in your installation may vary.
+1. This screenshot shows the 'Pullquote' button that will be added to the Visual Editor once installed. The button can be used to insert a left-aligned, right-aligned, or full-width pullquote, accordingly. The actual positioning of the button in your installation may vary.
 2. An example of a left-aligned and right-aligned pullquote. Your pullquotes will vary depending on your font settings, color choices, etc.
 
 == Changelog ==
+
+= 1.2 =
+* Fixes issue where empty `cite=""` attribute causes an empty footer element.
+* Properly spaces pullquote without corrupting surrounding paragraph `<p>` tags.
+* Replaces 2 separate pullquote buttons in editor with one menu button dropdown allowing the selection of adding a left-aligned, right-aligned, or full-width pullquote.
 
 = 1.1.4 =
 * Added schema.org tags and microformats.org tags
@@ -82,10 +87,10 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 * CSS fix for full-width quote.
 
 = 1.1.2 =
-* Adds support for full-width <code>width:100%</code> quotes. Utilize by specifying align="full" on shortcode. Update to docs and plugin URL.
+* Adds support for full-width <code>width:95%</code> quotes. Utilize by specifying align="full" on shortcode. Update to docs and plugin URL.
 
 = 1.1.1 =
-* Adds support for full-width <code>width:100%</code> quotes. Utilize by specifying align="full" on shortcode.
+* Adds support for full-width <code>width:95%</code> quotes. Utilize by specifying align="full" on shortcode.
 
 = 1.1 =
 * Fixes "Plugin does not have a valid header" error.

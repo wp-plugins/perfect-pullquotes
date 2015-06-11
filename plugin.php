@@ -2,8 +2,8 @@
 /*
 Plugin Name: Perfect Pullquotes
 Plugin URI:  http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
-Description: A Wordpress plugin to add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Also includes two custom buttons for the TinyMCE Editor as well as a custom shortcode.
-Version:     1.1.4
+Description: A Wordpress plugin to add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes a custom 'Pullquote' menu button for the TinyMCE Editor as well as a custom shortcode.
+Version:     1.2
 Author:      Adam Dehaven
 Author URI:  http://adamdehaven.com
 License:     GPL2
@@ -56,25 +56,27 @@ function adamdehaven_pullquote( $atts, $content = null ) {
 	}
 
 	// border-color: HEX value
-	if ( isset($a['color']) && preg_match("/#([a-fA-F0-9]{3}){1,2}\b/",$a['color']) ):
+	if ( isset($a['color']) && strlen($a['color']) > 1 && preg_match("/#([a-fA-F0-9]{3}){1,2}\b/",$a['color']) ):
         $color = ' style="border-color:'.$a['color'].' !important;"';
     else:
         $color = null;
     endif;
 
     // Check for cite
-    if ( isset($a['cite']) ):
+    if ( isset($a['cite']) && strlen($a['cite']) > 1 ):
     	$citeText = '<span itemprop="name fn">'.strip_tags( $a['cite'] ).'</span>';
     else:
     	$citeText = null;
     endif;
 
     // Check for link
-    if ( isset($a['link']) && preg_match("/(http|https)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/", $a['link']) ):
+    if ( isset($a['link']) && strlen($a['link']) > 1 && preg_match("/(http|https)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/", $a['link']) ):
         $citeLink = $a['link'];
+        $citeAttribute = ' cite="'.$citeLink.'"';
     	$citeLinkWithText = '<a href="'.$a['link'].'" class="url" target="_blank" itemprop="url">'.$citeText.'</a>';
     else:
     	$citeLink = null;
+        $citeAttribute = null;
         $citeLinkWithText = null;
     endif;
 
@@ -87,7 +89,7 @@ function adamdehaven_pullquote( $atts, $content = null ) {
 		$citeFooter = null;
 	endif;
 
-    return '<div class="pullquote '.$alignment.' '.esc_attr($a['class']).' vcard"'.$color.'><blockquote cite="'.$citeLink.'"><p>'.do_shortcode($content).'</p>'.$citeFooter.'</blockquote></div>';
+    return '<div class="pullquote vcard '.$alignment.' '.esc_attr($a['class']).'"'.$color.'><blockquote'.$citeAttribute.'><p>'.do_shortcode($content).'</p>'.$citeFooter.'</blockquote></div>';
 }
 
 add_action( 'init', 'adamdehaven_buttons' );
@@ -100,6 +102,6 @@ function adamdehaven_add_buttons($plugin_array) {
 	return $plugin_array;
 }
 function adamdehaven_register_buttons($buttons) {
-	array_push( $buttons, 'pullquote-left', 'pullquote-right' );
+	array_push( $buttons, 'pullquote-menu' );
 	return $buttons;
 }
