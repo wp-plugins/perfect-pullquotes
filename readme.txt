@@ -5,10 +5,10 @@ Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes
 Requires at least: 3.0.1
 Tested up to: 4.2.2
 Stable tag: 1.2.1
-License: GPL2
+License: GPLv2
 License URI: https://github.com/adamdehaven/perfect-pullquotes/blob/master/LICENSE
 
-Add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes a custom 'Pullquote' menu button for the TinyMCE Editor as well as a custom shortcode. View the always-current info post on [adamdehaven.com](http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-theme-with-the-perfect-pullquotes-plugin/)
+Add beautifully styled left-aligned, right-aligned, or full-width pullquotes to your Wordpress posts.
 
 == Description ==
 Add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes a custom 'Pullquote' menu button for the TinyMCE Editor as well as a custom shortcode. View the always-current info post on [adamdehaven.com](http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-theme-with-the-perfect-pullquotes-plugin/)
