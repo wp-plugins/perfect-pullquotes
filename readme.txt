@@ -75,12 +75,6 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 
 == Changelog ==
 
-= 1.2.1 =
-* Fixes issue where empty `cite=""` attribute causes an empty footer element.
-* Properly spaces pullquote without corrupting surrounding paragraph `<p>` tags.
-* Replaces 2 separate pullquote buttons in editor with one menu button dropdown allowing the selection of adding a left-aligned, right-aligned, or full-width pullquote.
-* Fixes "invalid header" error.
-
 = 1.2 =
 * Fixes issue where empty `cite=""` attribute causes an empty footer element.
 * Properly spaces pullquote without corrupting surrounding paragraph `<p>` tags.
