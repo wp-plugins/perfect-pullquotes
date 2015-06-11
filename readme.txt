@@ -4,9 +4,9 @@ Donate link: http://adamdehaven.com/
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 1.2.1
-License: GPLv2
-License URI: https://github.com/adamdehaven/perfect-pullquotes/blob/master/LICENSE
+Stable tag: 1.2
+License: GPL2
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Add beautifully styled left-aligned, right-aligned, or full-width pullquotes to your Wordpress posts.
 

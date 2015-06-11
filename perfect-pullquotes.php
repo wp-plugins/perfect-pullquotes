@@ -2,11 +2,24 @@
 /*
 Plugin Name: Perfect Pullquotes
 Plugin URI:  http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
-Description: A Wordpress plugin to add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes a custom Pullquote menu button for the TinyMCE Editor as well as a custom shortcode.
-Version:     1.2.1
+Description: A Wordpress plugin to add beautifully styled left-aligned, right-aligned, or full-width pullquotes.
+Version:     1.2
 Author:      Adam Dehaven
-Author URI:  http://adamdehaven.com
-License:     GPLv2
+Author URI:  http://adamdehaven.com/
+License:     GPL2
+ 
+Perfect Pullquotes is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+any later version.
+ 
+Perfect Pullquotes is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+ 
+You should have received a copy of the GNU General Public License
+along with Perfect Pullquotes. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
 */
 
 add_action( 'wp_enqueue_scripts', 'adamdehaven_pullquote_styles' );
