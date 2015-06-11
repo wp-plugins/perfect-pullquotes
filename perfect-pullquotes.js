@@ -1,6 +1,6 @@
 /* ======================================
  * https://github.com/adamdehaven/perfect-pullquotes
- * version 1.2.7
+ * version 1.2.8
  *
  * Adam Dehaven ( @adamdehaven )
  * http://adamdehaven.com/
