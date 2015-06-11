@@ -1,12 +1,12 @@
 === Perfect Pullquotes ===
 Contributors: adamdehaven
-Donate link: http://adamdehaven.com/
+Donate link: http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 1.2.5
-License: GPL2
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 1.2.6
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Add beautifully styled left-aligned, right-aligned, or full-width pullquotes to your Wordpress posts.
 
@@ -75,7 +75,7 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 
 == Changelog ==
 
-= 1.2.5 =
+= 1.2.6 =
 * Fixes issue where empty `cite=""` attribute causes an empty footer element.
 * Properly spaces pullquote without corrupting surrounding paragraph `<p>` tags.
 * Replaces 2 separate pullquote buttons in editor with one menu button dropdown allowing the selection of adding a left-aligned, right-aligned, or full-width pullquote.
@@ -105,6 +105,9 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.2.6 =
+Update now for an enhanced Pullquote button, to resolve the invalid header notice, and to correct pullquote spacing.
 
 = 1.0.1 =
 Minor update for performance improvements.

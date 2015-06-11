@@ -1,14 +1,15 @@
 <?php
 /*
-Plugin Name:  Perfect Pullquotes
-Plugin URI:   http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
-Description:  A Wordpress plugin to add beautifully styled left-aligned, right-aligned, or full-width pullquotes.
-Version:      1.2.5
-Author:       Adam Dehaven
-Author URI:   http://adamdehaven.com/
-License:      GPL2
-License URI:  https://www.gnu.org/licenses/gpl-2.0.html
-*/
+Plugin Name: Perfect Pullquotes
+Plugin URI:  http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
+Description: A Wordpress plugin to add beautifully styled left-aligned, right-aligned, or full-width pullquotes
+Version:     1.2.6
+Author:      Adam Dehaven
+Author URI:  http://adamdehaven.com/
+License:     GPL2
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
 add_action( 'wp_enqueue_scripts', 'adamdehaven_pullquote_styles' );
 function adamdehaven_pullquote_styles()
 {
