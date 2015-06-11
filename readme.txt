@@ -4,7 +4,7 @@ Donate link: http://adamdehaven.com/
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,23 +23,23 @@ The shortcode includes five options, (align, color, and class) as outlined below
 
 = align="left" =
 **REQUIRED**: Determines whether pullquote is left-aligned, right-aligned, or full-width (95% width of container). Accepts "left", "right", or "full"
-`[pullquote align="left"][/pullquote]`  
+<pre>[pullquote align="left"][/pullquote]</pre>
 
 = color="#EEEEEE" =
 **Optional**: Change the default `border-color` attribute by entering a valid HEX color, including the pound ( # ) sign.
-`[pullquote align="left" color="#16989D"][/pullquote]`  
+<pre>[pullquote align="left" color="#16989D"][/pullquote]</pre>
 
 = class="className" =
 **Optional**: Add class(es) to pullquote container.
-`[pullquote align ="right" class="firstClass secondClass"][/pullquote]`
+<pre>[pullquote align ="right" class="firstClass secondClass"][/pullquote]</pre>
 
 = cite="Jane Doe" =
 **Optional**: Cite your quotes back to their author/source
-`[pullquote align ="right" cite="Jane Doe"][/pullquote]`
+<pre>[pullquote align ="right" cite="Jane Doe"][/pullquote]</pre>
 
 = link="http://example.com" =
 **Optional**: Turn the cited author's name into a link that opens in a new window. Must be a valid URL beginning with `http` or `https`
-`[pullquote align ="right" cite="Jane Doe" link="http://example.com"][/pullquote]`
+<pre>[pullquote align ="right" cite="Jane Doe" link="http://example.com"][/pullquote]</pre>
 
 == Installation ==
 
@@ -75,7 +75,7 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 
 == Changelog ==
 
-= 1.2 =
+= 1.2.4 =
 * Fixes issue where empty `cite=""` attribute causes an empty footer element.
 * Properly spaces pullquote without corrupting surrounding paragraph `<p>` tags.
 * Replaces 2 separate pullquote buttons in editor with one menu button dropdown allowing the selection of adding a left-aligned, right-aligned, or full-width pullquote.
