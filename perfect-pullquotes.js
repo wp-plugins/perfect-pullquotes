@@ -1,14 +1,11 @@
-/* ======================================
- * https://github.com/adamdehaven/perfect-pullquotes
- * version 1.3.1
- *
- * Adam Dehaven ( @adamdehaven )
- * http://adamdehaven.com/
- *
- * pullquote-shortcode.js
- *
- * ======================================
-*/
+/*
+Plugin Name: Perfect Pullquotes
+Plugin URI:  http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
+Description: Add beautifully styled pullquotes to your Wordpress posts
+Version:     1.4
+Author:      Adam Dehaven
+Author URI:  http://adamdehaven.com/
+ */
 (function() {
     tinymce.create('tinymce.plugins.AdamDehavenPerfectPullquotes', {
         /**
