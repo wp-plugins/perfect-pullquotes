@@ -3,17 +3,30 @@
 Plugin Name: Perfect Pullquotes
 Plugin URI:  http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
 Description: A Wordpress plugin to add beautifully styled left-aligned, right-aligned, or full-width pullquotes.
-Version:     1.2
+Version:     1.2.3
 Author:      Adam Dehaven
 Author URI:  http://adamdehaven.com
 License:     GPL2
+
+Perfect Pullquotes is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+any later version.
+ 
+Perfect Pullquotes is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+ 
+You should have received a copy of the GNU General Public License
+along with Perfect Pullquotes. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
 */
 
 add_action( 'wp_enqueue_scripts', 'adamdehaven_pullquote_styles' );
 function adamdehaven_pullquote_styles()
 {
     // Register the style like this for a plugin:
-    wp_register_style( 'perfect-pullquotes-styles', plugins_url( '/pullquote.css', __FILE__ ), array(), '1.1', 'all' ); 
+    wp_register_style( 'perfect-pullquotes-styles', plugins_url( '/perfect-pullquotes.css', __FILE__ ), array(), '1.1', 'all' ); 
     // For either a plugin or a theme, you can then enqueue the style:
     wp_enqueue_style( 'perfect-pullquotes-styles' );
 }
@@ -85,7 +98,7 @@ function adamdehaven_buttons() {
     add_filter('mce_buttons', 'adamdehaven_register_buttons');
 }	
 function adamdehaven_add_buttons($plugin_array) {
-	$plugin_array['adamdehaven_perfect_pullquotes'] = plugins_url( '/pullquote-shortcode.js', __FILE__ );
+	$plugin_array['adamdehaven_perfect_pullquotes'] = plugins_url( '/perfect-pullquotes.js', __FILE__ );
 	return $plugin_array;
 }
 function adamdehaven_register_buttons($buttons) {

@@ -1,6 +1,6 @@
 /* ======================================
  * https://github.com/adamdehaven/perfect-pullquotes
- * version 1.2
+ * version 1.2.3
  *
  * Adam Dehaven ( @adamdehaven )
  * http://adamdehaven.com/
@@ -80,11 +80,11 @@
          */
         getInfo : function() {
             return {
-                    longname : 'Adam Dehaven Pullquote Shortcode',
+                    longname : 'Perfect Pullquotes',
                     author : 'Adam Dehaven',
                     authorurl : 'http://adamdehaven.com',
-                    infourl : 'http://github.com/adamdehaven/perfect-pullquotes',
-                    version : "1.0"
+                    infourl : 'http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/',
+                    version : "1.2.3"
             };
         }
     });
